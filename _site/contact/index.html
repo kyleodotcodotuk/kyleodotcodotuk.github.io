@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+        <title>Contact Us</title>
+        <meta name="description" content="">
+        
+
+        
+        
+            <link rel="stylesheet" href="/style.css">
+        
+
+        
+
+        
+            <script src="/bundle.js" defer></script>
+        
+
+        
+
+        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <meta name="twitter:dnt" content="on">
+
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
+
+    </head>
+    <body class="">
+
+        
+
+
+<header class="px-8 py-4">
+    <div class="container flex justify-between items-center">
+        <a class="size-lg weight-bold" href="/">11ty Starter</a>
+
+        
+<div x-data>
+    <nav class="mobile-menu" :data-state="$store.menuIsOpen ? 'open' : 'closed'">
+        <ul>
+            
+                
+                <li>
+                    <a href="/">Home</a>
+
+                    
+                </li>
+                
+            
+                
+            
+        </ul>
+
+        
+        <div class="mobile-menu__phone">
+            <p class="uppercase c-gray-70 tracking-wide size-sm">Call Us</p>
+            <a href="tel:0208 300 8833">0208 300 8833</a>
+        </div>
+        
+    </nav>
+
+    <button
+        @click="$store.menuIsOpen = !$store.menuIsOpen"
+        :data-state="$store.menuIsOpen ? 'open' : 'closed'"
+        class="hamburger"
+    >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+</div>
+
+        
+    <nav class="menu">
+        <ul class="flex gap-6">
+            
+                
+                    
+                    <li class="menu__item">
+                        <a href="/">Home</a>
+                    </li>
+                    
+                
+            
+                
+            
+        </ul>
+    </nav>
+
+    </div>
+</header>
+
+        
+<div class="block-area | mt-20">
+    <h1 class="align-center">Contact Us</h1>
+    <div class="is-wide | grid gap-10 align-center md:cols-3">
+        <div class="px-6">
+            <strong class="font-heading c-gray-50 label">Phone</strong>
+            <p class="weight-bold">
+                <a class="size-lg c-brand" href="tel:0208 300 8833">0208 300 8833</a>
+            </p>
+        </div>
+        <div class="px-6">
+            <strong class="font-heading c-gray-50 label">E-mail</strong>
+            <p class="email-address weight-bold">ku.oc.wonkser@ofni</p>
+        </div>
+        <div class="px-6">
+            <strong class="font-heading c-gray-50 label">Address</strong>
+            <p>13 St Johns Parade, Sidcup, Kent, DA14 6ES</p>
+        </div>
+    </div>
+</div>
+
+        
+
+        <script>
+    document.addEventListener('alpine:initializing', () => {
+        Alpine.store( 'menuIsOpen', false );
+    });
+</script>
+
+        
+            <cookie-consent-banner hidden>
+                <p>We use cookies to provide the best experience.</p>
+            </cookie-consent-banner>
+            <script type="module" src="https://unpkg.com/simple-cookie-consent-banner/cookie-consent-banner.js"></script>
+        
+
+    </body>
+</html>
