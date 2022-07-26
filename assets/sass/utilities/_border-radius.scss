@@ -1,7 +1,0 @@
-@if (config('utilities.borderRadius', true)) {
-	@each $token, $value in token('radius') {
-		.radius-#{$token} {
-			border-radius: #{$value};
-		}
-	}
-}
